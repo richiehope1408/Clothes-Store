@@ -22,4 +22,6 @@
 
 > Some of the API calls do not work as expected (API issues not network calls from app).
 
+## Testing information
 
+> There are some unit tests in the App. These are focused on the network calls and responses therein.
