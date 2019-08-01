@@ -1,7 +1,7 @@
 # Clothes-Store
 <h1 align="center">
   <br>
-  <a><img src=iPhone X-XS – 1.png width="200"><a><img src=iPhone X-XS – 2.png width="200"></a><a><img src=iPhone X-XS – 3.png width="200"></a><a><img src=iPhone X-XS – 4.png width="200"></a>
+  <a><img src=app-mock-ups.png width="1050"><a>
   <br>
   Clothes Store
   <br>
