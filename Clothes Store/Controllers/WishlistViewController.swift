@@ -72,8 +72,9 @@ class WishlistViewController: UIViewController, BuyCellButtonTapped {
         if (product.stock ?? 0) > 0{
 
             //Firstly let's check if item is already in the basket. If it is let's just increase the quantity count in the basket instead of adding a new instance of the product.
-            if basketArray.contains(product){
-                if let index = basketArray.firstIndex(where: {$0 == product}){
+
+            if basketArray.contains(where: {$0.productId == product.productId}) {
+                if let index = basketArray.firstIndex(where: {$0.productId == product.productId}){
                     basketArray[index].quantity =  (basketArray[index].quantity ?? 1) + 1
                 }
                 SavedProducts.basketProductsObservable.accept(basketArray)
