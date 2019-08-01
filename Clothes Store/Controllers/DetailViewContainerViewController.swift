@@ -64,10 +64,10 @@ class DetailViewContainerViewController: UIViewController{
                 var array = SavedProducts.basketProductsObservable.value
 
                 //Firstly let's check if item is already in the basket. If it is let's just increase the quantity count in the basket instead of adding a new instance of the product.
-                if array.contains(self.product){
+                if array.contains(where: {$0.productId == self.product.productId}) {
 
 
-                    if let index = array.firstIndex(where: {$0 == self.product}){
+                    if let index = array.firstIndex(where: {$0.productId == self.product.productId}){
                         array[index].quantity =  (array[index].quantity ?? 1) + 1
                     }
 
