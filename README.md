@@ -8,13 +8,13 @@
   <br>
 </h1>
 
-<h4 align="center">This is a simple iOS app demonstrating an online Store.</h4>
+<h4 align="center">This is a simple iOS app demonstrating an online store.</h4>
 
 ## Requirements
 
-> This app uses Cocoapods to install some dependencies that the project uses iun particular:
+> This app uses Cocoapods to install some dependencies that the project uses, in particular:
 
-* RxSwift - for Reactive compomnents
+* RxSwift - for Reactive components
 * RxCocoa - for Reactive UI
 * Alamofire - for networking
 
