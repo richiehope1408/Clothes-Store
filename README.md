@@ -3,6 +3,7 @@
   <br>
   <a><img src=app-mock-ups.png width="1050"><a>
   <br>
+  <br>
   Clothes Store
   <br>
 </h1>
