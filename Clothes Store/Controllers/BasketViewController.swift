@@ -53,7 +53,8 @@ class BasketViewController: UIViewController {
                     self.noProductsLabel.alpha = 1.0
                 }
 
-                let total = products.map({$0.price ?? 0.0}).reduce(Float(0.0), +)
+                let total = products.map({($0.price ?? 0.0) * Float($0.quantity ?? 0)}).reduce(Float(0.0), +)
+
                 self.total.text = CurrencyHelper.getMoneyString(total)
             }).disposed(by: disposeBag)
     }
